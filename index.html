@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Talyson</title>
+</head>
+<body onload="load()">
+
+    <div class="box-spinner">
+        <div class="spinner"></div>
+    </div>
+    <!-- ----------------------------------------------- -->
+
+    <!-- ---------------------------------------------------- -->
+    
+    <div class="contain">
+        
+        <header class="Navbar">
+            <a href="#"><img src="./assets/img/Logo.png"></a>
+            <ul >
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+            <button class="btn" ></button>
+        </header>
+        <main>
+            <section id="inicio">
+                <img src="./assets/img/Rosto-banner.jpg" alt="FaceBackground">
+                <div class="presentation">
+                    <h1>TALYSON FERREIRA</h1>
+                    <span>Desenvolvedor Front-end</span>
+                    <div class="linksGo">
+                        <a href="./assets/img/Currículo( Talyson Ferreira).pdf" download><span class="span1"></span> Currículo</a>
+                        <a href="https://www.linkedin.com/in/talyson-ferreira-5a5682136/" target="_blank" ><span class="span2"></span> Linkedin</a>
+                    </div>
+                </div>
+                
+
+            </section>
+
+            <section id="Projetos" >
+
+                <div class="tabProjetos">
+                    <h2>Projetos</h2>
+                    <div class="thumbnailProjetos">
+                        <div class="screen thumbnail-1" onmouseenter="showscreen(0)">
+                            <div class="thumbnailInfo-1">
+                                <div class="info">
+                                    <span>Relógio digital</span>
+                                    <p>Esse projeto é um relógio digital, para ser usado como background.</p>
+                                    <a class="BtnInfo" href="https://talyson-ferreira1.github.io/Relogitarget="_blank"o/" >Visitar site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen thumbnail-2" onmouseenter="showscreen(1)">
+                            <div class="thumbnailInfo-2">
+                                <div class="info">
+                                    <span>Excelly</span>
+                                    <p>Esse projeto é um site que disponibiliza planilhas gratuitamente.</p>
+                                    <a class="BtnInfo" href="https://talyson-ferreira1.github.io/EXCELLY/" target="_blank">Visitar site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen thumbnail-3" onmouseenter="showscreen(2)">
+                            <div class="thumbnailInfo-3">
+                                <div class="info">
+                                    <span>VipCell</span>
+                                    <p>Esse projeto é um site de anúncio para celulares.</p>
+                                    <a class="BtnInfo" href="https://talyson-ferreira1.github.io/Vipcell/" target="_blank">Visitar site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen thumbnail-4" onmouseenter="showscreen(3)">
+                            <div class="thumbnailInfo-4">
+                                <div class="info">
+                                    <span>Trapo</span>
+                                    <p>Esse projeto é um site e-commerce.</p>
+                                    <a class="BtnInfo" href="https://talyson-ferreira1.github.io/Loja-trapo/" target="_blank">Visitar site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen thumbnail-5" onmouseenter="showscreen(4)">
+                            <div class="thumbnailInfo-5">
+                                <div class="info">
+                                    <span>Tela de login</span>
+                                    <p>Esse projeto é uma tela de login com validação de e-mail, senha e nome de usuário.</p>
+                                    <a class="BtnInfo" href="https://talyson-ferreira1.github.io/Login-e-Cadastro/" target="_blank">Visitar site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen thumbnail-6" onmouseenter="showscreen(5)">
+                            <div class="thumbnailInfo-6">
+                                <div class="info">
+                                    <span>Currículo</span>
+                                    <p>Meu currículo digital</p>
+                                    <a class="BtnInfo" href="https://talyson-ferreira1.github.io/Curriculo/" target="_blank">Visitar site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="BtnProjetos" href="https://github.com/Talyson-Ferreira1" target="_blank">Ver mais no git hub</a>
+                    
+                </div>
+            
+                <div class="visorProjetos">
+                    
+                    <img class="screenvisor" src="./assets/img/screen-cellphone.png" alt="">
+
+                    <div class="screen-img">
+                        <div class="screencontent visor-1"></div>
+                        <div class="screencontent visor-2"></div>
+                        <div class="screencontent visor-3"></div>
+                        <div class="screencontent visor-4"></div>
+                        <div class="screencontent visor-5"></div>
+                        <div class="screencontent visor-6"></div>
+                        <div class="restScreen"></div>
+                    </div>
+
+                    <div class="shadowScreen"></div>
+                </div>
+                
+            </section>
+
+            <section id="habilidades">
+                <div class="contain-skill">
+                    <span>Click na habilidade para saber mais</span>
+                    <img src="./assets/img/icons/icons8-adobe-photoshop.svg" alt="img-skill" onclick="showPopup(0)">
+                    <img src="./assets/img/icons/icons8-canva.svg" alt="img-skill" onclick="showPopup(1)">
+                    <img src="./assets/img/icons/icons8-figma.svg" alt="img-skill" onclick="showPopup(2)">
+                    <img src="./assets/img/icons/icons8-html-5.svg" alt="img-skill" onclick="showPopup(3)">
+                    <img src="./assets/img/icons/icons8-javascript.svg" alt="img-skill" onclick="showPopup(4)">
+                    <img src="./assets/img/icons/icons8-reagir.svg" alt="img-skill" onclick="showPopup(5)">
+                    <img src="./assets/img/icons/icons8-css3.svg" alt="img-skill" onclick="showPopup(6)">
+                    <img src="./assets/img/icons/icons8-git.svg" alt="img-skill" onclick="showPopup(7)">
+                    <img src="./assets/img/icons/icons8-github.svg" alt="img-skill" onclick="showPopup(8)">
+                </div>
+                <div class=" skill info-photoshop">
+                    <div class="photoshop">1
+                        <div class="hideSkill" onclick="hidePopup()"></div>
+                    </div>
+                </div>
+                <div class=" skill info-canva">
+                    <div class="canva">2
+                        <div class="hideSkill" onclick="hidePopup()"></div>
+                    </div>
+                </div>
+                <div class=" skill info-figma">
+                    <div class="figma">3
+                        <div class="hideSkill" onclick="hidePopup()"></div>
+                    </div>
+                </div>
+                <div class=" skill info-html">
+                    <div class="html">4
+                        <div class="hideSkill" onclick="hidePopup()"></div>
+                    </div>
+                </div>
+                <div class=" skill info-javascript">
+                    <div class="javascript">5
+                        <div class="hideSkill" onclick="hidePopup()"></div>
+                    </div>
+                </div>
+                <div class=" skill info-react">
+                    <div class="react">6
+                        <div class="hideSkill" onclick="hidePopup()"></div>
+                    </div>
+                </div>
+                <div class=" skill info-css">
+                    <div class="css">7
+                        <div class="hideSkill" onclick="hidePopup()"></div>
+                    </div>
+                </div>
+                <div class=" skill info-git">
+                    <div class="git">8
+                        <div class="hideSkill" onclick="hidePopup()"></div>
+                    </div>
+                </div>
+                <div class=" skill info-github">
+                    <div class="github">9
+                        <div class="hideSkill" onclick="hidePopup()"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="Sobre">
+                <img  class="bannerSobre" src="./assets/img/terno-costa.jpeg" alt="banner">
+            </section >
+            <section id="Contato">
+            </section>
+                
+        </main>
+    </div>    
+</body>
+<script src="./assets/index.js"></script>
+</html>
