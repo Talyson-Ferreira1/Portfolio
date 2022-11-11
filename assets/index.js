@@ -137,7 +137,7 @@ const navbar = document.querySelector('.Navbar');
 
     })
 
-     /* ------------------------------------ Popup Skills ----------------------------------- */
+    /* ------------------------------------ Popup Skills ----------------------------------- */
     
     const infoSkill = document.querySelectorAll(".skill");
     const containerSkillPopup = document.querySelector('.infoSkill');
@@ -179,7 +179,9 @@ const navbar = document.querySelector('.Navbar');
             
     }
 
+    const scrollToLast = document.querySelector(".scrollToLast");
 
-
-    
+    scrollToLast.addEventListener('click', ()=>{
+        boxSkill.scrollLeft = 1000;
+    })
    

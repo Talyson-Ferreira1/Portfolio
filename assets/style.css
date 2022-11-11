@@ -13,6 +13,7 @@
     --blur:rgba(255, 255, 255, 0.171);
     --primary:#E83864;
     --secundary:#db3962;
+    --skill-color:#db3961ba;
     --nav-color: linear-gradient(180deg, rgba(232,56,100,1) 0%, rgba(232,56,100,0.5) 50%, rgba(232,56,100,0.15) 100%);
 
     --baixa:1;
@@ -638,12 +639,13 @@ to {
     padding: 0 2rem;
     width: 100%;
     height: 100%;
-    background: var(--secundary);
+    background:var(--skill-color); 
     display: grid;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     grid-template-columns:repeat(9, 10%);
     position: relative;
+    gap: 1rem;
 }
 .contain-skill span
 {
@@ -660,6 +662,9 @@ to {
     width: 5rem;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% -50%);
 
 }
 .contain-skill img:hover
@@ -785,6 +790,7 @@ to {
     }
 }
 @media (max-width:800px){
+    /* ------- Início----------- */
     .presentation
     {
         width: 100vw;
@@ -797,6 +803,50 @@ to {
     .presentation span
     {
         font-size: .6em;
+    }
+    /* ------- Habilidades----------- */
+    .scrollToLast
+    {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 10px;
+        z-index: var(--media);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: scrollToLast 1s ease-in-out infinite;
+        transition: .5s;
+    }
+    .scrollToLast::before
+    {
+        content: '\f101';
+        font-family: var(--icon);
+        color: var(--white);
+        right: 10px;
+
+    }
+    @keyframes scrollToLast {
+        0%{
+            right: 8px;
+        }
+        50%{
+            right: 5px;
+        }
+        100%{
+            right: 8px;
+        }
+    }
+    .contain-skill
+    {
+        display: flex;
+        width: 1000px;
+        overflow-x: scroll;
+        gap: 2rem;
+    }
+    .contain-skill img
+    {
+        min-width: 5rem;
     }
 }
 @media (max-width:700px){
