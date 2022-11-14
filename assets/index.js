@@ -180,8 +180,19 @@ const navbar = document.querySelector('.Navbar');
     }
 
     const scrollToLast = document.querySelector(".scrollToLast");
+    const scrollToFirst = document.querySelector(".scrollToFirst");
 
     scrollToLast.addEventListener('click', ()=>{
         boxSkill.scrollLeft = 1000;
     })
+    scrollToFirst.addEventListener('click', ()=>{
+        boxSkill.scrollLeft = 0;
+    })
+    boxSkill.addEventListener('scroll', ()=>{
+        scrollToFirst.style.display="flex"
+    })
+    
+
+  
+  
    

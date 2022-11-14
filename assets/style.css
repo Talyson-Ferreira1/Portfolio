@@ -626,7 +626,7 @@ to {
 /* --------------------------------------- Habilidades -----------------------*/
 #habilidades
 {
-    height: 30vh;
+    height: 20vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -652,10 +652,12 @@ to {
     display: none;
     letter-spacing: 1px;
     position: absolute;
-    top: 5%;
+    top: 2%;
     left: 50%;
     transform: translateX(-50%);
     font-size: .8em;
+    width: 100%;
+    text-align: center;
 }
 .contain-skill img
 {
@@ -809,7 +811,7 @@ to {
     {
         position: absolute;
         width: 20px;
-        height: 20px;
+        height: 100%;
         right: 10px;
         z-index: var(--media);
         display: flex;
@@ -818,12 +820,33 @@ to {
         animation: scrollToLast 1s ease-in-out infinite;
         transition: .5s;
     }
+    .scrollToFirst
+    {
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        left: 10px;
+        z-index: var(--media);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        animation: scrollToFirst 1s ease-in-out infinite;
+        transition: .5s;
+    }
     .scrollToLast::before
     {
         content: '\f101';
         font-family: var(--icon);
-        color: var(--white);
+        color: var(--black);
         right: 10px;
+
+    }
+    .scrollToFirst::before
+    {
+        content: '\f100';
+        font-family: var(--icon);
+        color: var(--black);
+        left: 10px;
 
     }
     @keyframes scrollToLast {
@@ -837,6 +860,17 @@ to {
             right: 8px;
         }
     }
+    @keyframes scrollToFirst {
+        0%{
+            left: 8px;
+        }
+        50%{
+            left: 5px;
+        }
+        100%{
+            left: 8px;
+        }
+    }
     .contain-skill
     {
         display: flex;
@@ -848,6 +882,18 @@ to {
     {
         min-width: 5rem;
     }
+}
+@media (max-width:750px){
+    /* ------- Projetos ------------*/
+    .tabProjetos
+    {
+        width: 100vw;
+    }
+    .visorProjetos
+    {
+        display: none;
+    }
+    
 }
 @media (max-width:700px){
     .btn{
@@ -882,20 +928,16 @@ to {
     
 
 }
-@media (max-width:750px){
-    /* ------- Projetos ------------*/
-    .tabProjetos
-    {
-        width: 100vw;
-    }
-    .visorProjetos
-    {
-        display: none;
-    }
-    
-}
 @media (max-width:500px){
-   /* ------- Projetos ------------*/
+    /* ------- Início----------- */
+    #inicio img
+    {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+    /* ------- Projetos ------------*/
     #Projetos
     {
         height: auto;
@@ -934,4 +976,9 @@ to {
        font-size: .7em;
        height: 1.5rem;
    }
+    /* ------- Habilidades ------------*/
+    .contain-skill span
+    {
+        font-size: .5em;
+    }
 }
