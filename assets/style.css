@@ -882,6 +882,19 @@ to {
     {
         min-width: 5rem;
     }
+    .contain-skill::-webkit-scrollbar
+    {
+        width: 3px;
+        height: 5px;
+        border:none;
+        background: transparent;
+
+    }
+    .contain-skill::-webkit-scrollbar-thumb
+    {
+        background:rgba(255, 255, 255, 0.236);
+        border-radius: 20px;
+    }
 }
 @media (max-width:750px){
     /* ------- Projetos ------------*/
