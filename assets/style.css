@@ -929,14 +929,6 @@ to {
 
 }
 @media (max-width:500px){
-    /* ------- Início----------- */
-    #inicio img
-    {
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-
-    }
     /* ------- Projetos ------------*/
     #Projetos
     {
