@@ -244,7 +244,7 @@ to {
 {
     position: absolute;
     content: ' ';
-    top: 10px;
+    top: 25%;
     left: 50%;
     transform: translateX(-50%);
     height: 1px;
@@ -257,7 +257,7 @@ to {
 {
     position: absolute;
     content: ' ';
-    bottom: 10px;
+    bottom: 25%;
     left: 50%;
     transform: translateX(-50%);
     height: 1px;
@@ -268,13 +268,16 @@ to {
 }
 .btn.active.btn::after
 {
-  
-    transform: translateY(5px)  translateX(-50%) rotate(45deg);
+    top: 50%;
+    left: 10%;
+    transform:  rotate(45deg);
 }
 .btn.active.btn::before
 {
- 
-    transform: translateY(-4px)  translateX(-50%) rotate(-45deg);
+    bottom: 50%;
+    left: 10%;
+
+    transform:translateY(1px)  rotate(-45deg);
 }
 .Navbar.hide
 {
@@ -981,11 +984,12 @@ to {
         top:  100%;
         width: 100%;
         height: calc(0px - 100%);
-        background: var(--blur);
+        background: rgba(255, 255, 255, 0.376);
         backdrop-filter: blur(50px);
         flex-direction: column;
         opacity: 0;
         padding: 1rem 0rem;
+
     }
     .Navbar ul.active
     {
