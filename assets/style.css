@@ -245,12 +245,11 @@ to {
     position: absolute;
     content: ' ';
     top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 10%;
     height: 1px;
     width:80%;
     background:var(--white);
-    transition: all .3s;
+    transition: all .2s;
 
 }
 .btn::before
@@ -258,12 +257,11 @@ to {
     position: absolute;
     content: ' ';
     bottom: 25%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 10%;
     height: 1px;
     width:80%;
     background:var(--white);
-    transition: all .3s;
+    transition: all .2s;
 
 }
 .btn.active.btn::after
@@ -276,8 +274,7 @@ to {
 {
     bottom: 50%;
     left: 10%;
-
-    transform:translateY(1px)  rotate(-45deg);
+    transform: translateY(1px)  rotate(-45deg);
 }
 .Navbar.hide
 {
