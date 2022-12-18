@@ -13,9 +13,10 @@ const navBtn = document.querySelector('.btn');
 var navList = document.querySelector('.Navbar ul');
 
 function toggleMenu(){
-    
+
     navList.classList.toggle('active'); 
-    navBtn.classList.toggle('active'); 
+    navBtn.classList.toggle('active');  
+    
 }
 
 navBtn.addEventListener('click', toggleMenu);
@@ -66,20 +67,26 @@ const navbar = document.querySelector('.Navbar');
     /*===================================== Inicio ======================================================== */
 
     /* ------------------------------------ Efeito máquina de escrever ----------------------------------- */
+    function showProfession(){
 
-    function typeWriter(elemento){
-        const textArray = elemento.innerHTML.split("");
-        elemento.innerHTML = "";
+        function typeWriter(elemento){
+            const textArray = elemento.innerHTML.split("");
+            elemento.innerHTML = "";
 
-        textArray.forEach((letra, i) => {
-            setTimeout(() => (elemento.innerHTML += letra),200 * i);
-        });
-        
-    } 
-
-    const profession = document.querySelector('.presentation span');
-    typeWriter(profession);
+            textArray.forEach((letra, i) => {
+                setTimeout(() => (elemento.innerHTML += letra),200 * i);
+            });
+            
+        } 
+        const profession = document.querySelector('.presentation span');
+        typeWriter(profession);
+    }
+    
+    showProfession();
+    setInterval(showProfession,10000);
+    
    
+
     /*===================================== Projetos ======================================================== */
 
 
