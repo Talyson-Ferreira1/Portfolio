@@ -67,23 +67,47 @@ const navbar = document.querySelector('.Navbar');
     /*===================================== Inicio ======================================================== */
 
     /* ------------------------------------ Efeito máquina de escrever ----------------------------------- */
-    function showProfession(){
 
-        function typeWriter(elemento){
-            const textArray = elemento.innerHTML.split("");
-            elemento.innerHTML = "";
+    const textDisplay = document.querySelector('.Profession');
+    const frases = ['Desenvolvedor Front-End', 'Freelancer', 'Designer gráfico', 'Auxiliar administrativo']
+    let i = 0;
+    let j = 0;
+    let currentFrase = []
+    let isDeleting = false;
 
-            textArray.forEach((letra, i) => {
-                setTimeout(() => (elemento.innerHTML += letra),200 * i);
-            });
+
+    function typeWriter(){
+        textDisplay.innerHTML = currentFrase.join('');   
+
+        if(i < frases.length){
+
+            if(!isDeleting && j <=   frases[i].length){
+                currentFrase.push(frases[i][j])
+                j++
+            }
+
+            if(isDeleting && j <=   frases[i].length){
+                currentFrase.pop(frases[i][j])
+                j--
+            }
+
+            if(j == frases[i].length){
+                isDeleting = true
+            }
+            if( isDeleting && j === 0){
+                currentFrase = []
+                isDeleting = false
+                i++
+                if(i == frases.length){
+                    i = 0
+                }
+            }
             
-        } 
-        const profession = document.querySelector('.presentation span');
-        typeWriter(profession);
+        }
+        setTimeout( typeWriter,150)
     }
-    
-    showProfession();
-    setInterval(showProfession,10000);
+
+    typeWriter()
     
    
 
