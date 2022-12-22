@@ -439,7 +439,6 @@ to {
 {
     transform: scale(1.05);
 }
-
 .thumbnail-1:is(:hover,:focus) .thumbnailInfo-1,
 .thumbnail-2:is(:hover,:focus) .thumbnailInfo-2,
 .thumbnail-3:is(:hover,:focus) .thumbnailInfo-3, 
@@ -688,6 +687,7 @@ to {
     transform: translate(-50%, -50%);
     z-index: var(--superalta);
     display: none;
+    
 
 }
 .photoshop,.canva,.figma,
@@ -706,6 +706,8 @@ to {
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
+   
 }
 .hideSkill
 {
@@ -738,7 +740,101 @@ to {
 {
     display: block;
 }
+.containerPhotoShop,.containerCanva,.containerFigma,
+.containerHtml,.containerJs,.containerReact,.containerCss,
+.containerGit,.containerGithub
+{
+    width: 95%;
+    min-height: 85%;
+    position: relative;
+    padding: 1rem;
+}
 
+.titleSkill
+{
+    height: 2rem;
+    text-align: center;
+    font-size: 4em;
+    color: var(--primary);
+    letter-spacing: 1px;
+}
+.percent,.description
+{
+    margin: 1rem 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+.progressBar
+{
+    width: 50%;
+    height: 1rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.597);
+    overflow: hidden;
+    position: relative;
+}
+.descriptionText
+{
+    width: 50%;
+    height: 10rem;
+    min-height: 5rem;
+    border-radius: 20px;
+    padding: 1rem;
+    color: var(--white);
+    border: 1px solid var(--primary);
+}
+.iconSkill
+{
+    position: absolute;
+    width: 40%;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.progressPS,.progressCanva,.progressFigma,
+.progressHTML,.progressJS,.progressReact,
+.progressCss,.progressGit,.progressGitHub
+{
+    height: 100%;
+    background: var(--primary);
+    border-radius: 20px;
+}
+.progressPS
+{
+    width: 20%;
+}
+.progressCanva
+{
+    width: 80%;
+}
+.progressFigma
+{
+    width: 30%;
+}
+.progressHTML
+{
+    width: 80%;
+}
+.progressJS
+{
+    width: 60%;
+}
+.progressReact
+{
+    width: 30%;
+}
+.progressCss
+{
+    width: 90%;
+}
+.progressGit
+{
+    width: 50%;
+}
+.progressGitHub
+{
+    width: 80%;
+}
 @keyframes closeSkills{
     0%{
         opacity: 70%;
@@ -859,6 +955,21 @@ to {
     {
         font-size: .6em;
         height: 1.2rem;
+    }
+    /* ------- Skills ------------*/
+    .photoshop,.canva,.figma,
+    .html,.javascript,.react,
+    .css,.git,.github
+    {
+        width: 90%;
+        height: 90%;
+        min-width: 300px;
+           
+    }
+    .descriptionText
+    {
+        font-size: .8em;
+        height: auto;
     }
 }
 @media (max-width:800px){
@@ -1076,9 +1187,20 @@ to {
        font-size: .7em;
        height: 1.5rem;
    }
-    /* ------- Habilidades ------------*/
+    /* ------- Skills ------------*/
     .contain-skill span
     {
         font-size: .5em;
+    }
+    .iconSkill
+    {   
+        width: 5rem;
+        left: 12rem;
+        top: 9rem;
+    }
+    .progressBar,.descriptionText
+    {
+        width: 90%;
+
     }
 }

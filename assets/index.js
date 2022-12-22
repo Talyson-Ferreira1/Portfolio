@@ -144,13 +144,11 @@ const navbar = document.querySelector('.Navbar');
             screencontent[5].classList.add("showscreen");
         }
 
-/*          setTimeout( ()=> {
-                screencontent.forEach( 
-                            item =>{item.classList.remove("showscreen");
-                            restScreen.style.display="block"});
-            }, 7000);
- */        
+        
     }
+
+        
+    
 
     /*===================================== Habilidades ======================================================== */
 
