@@ -878,7 +878,7 @@ to {
 {
     width: 90%;
     height: auto;
-    min-width: 30rem;
+    min-width: 25rem;
     padding: 1rem;
     background: var(--blur);
     border-radius: 0 0 10px 10px;
@@ -1203,4 +1203,20 @@ to {
         width: 90%;
 
     }
+}
+@media (max-width:400px){
+    /* ------- Skills ------------*/
+    .aboutMe{
+        margin-top: 5rem;
+    }
+    .infoAbout{
+        height: auto;
+        min-width: 15rem;
+        padding: 1rem;
+    }
+    .infoAbout p
+    {
+        font-size: .8em;
+    }
+
 }
