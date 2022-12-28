@@ -146,9 +146,19 @@ const navbar = document.querySelector('.Navbar');
 
         
     }
-
+     /* ------------------------------------ Efeito anima a entrada com scrool ----------------------------------- */
         
+    ScrollReveal({reset: true});
+
+    ScrollReveal().reveal('.scrollAnimation', { 
+        duration: 1000,
+        scale:{x:50, y:50, z:10 }
+    });
     
+    AOS.init({
+        duration: 1000,
+        rotate:{x:0, y:80, z:0 }
+    });
 
     /*===================================== Habilidades ======================================================== */
 

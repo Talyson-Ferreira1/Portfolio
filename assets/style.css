@@ -116,6 +116,10 @@ body::-webkit-scrollbar-thumb
 {
     left: 100%;
 }
+.scrollAnimation
+{
+    visibility: hidden;
+}
 
 /* ---------------------------------------- LOAD ANIMATION ------------------------*/
 .box-spinner

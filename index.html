@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1.0">
-    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/style.css">
     <title>Talyson</title>
 </head>
+
 <body onload="load()">
 
     <div class="box-spinner">
@@ -45,7 +49,7 @@
 
             <section id="Projetos" >
 
-                <div class="tabProjetos">
+                <div class="tabProjetos scrollAnimation">
                     <h2>Projetos</h2>
                     <div class="thumbnailProjetos">
                         <div class="screen thumbnail-1" onmouseenter="showscreen(0)">
@@ -145,7 +149,7 @@
                 
             </section>
 
-            <section id="habilidades">
+            <section id="habilidades"   data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <div class="scrollToLast"></div>
                 <div class="scrollToFirst"></div>
                 <div class="contain-skill">
