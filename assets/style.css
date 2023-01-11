@@ -116,10 +116,6 @@ body::-webkit-scrollbar-thumb
 {
     left: 100%;
 }
-.scrollAnimation
-{
-    visibility: hidden;
-}
 
 /* ---------------------------------------- LOAD ANIMATION ------------------------*/
 .box-spinner
@@ -284,8 +280,6 @@ to {
 {
    transform: translateY(-100%);
 }
-
-
 /* --------------------------------------- Inicio -----------------------*/
 #inicio img
 {
