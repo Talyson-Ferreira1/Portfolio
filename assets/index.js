@@ -64,6 +64,8 @@ const navbar = document.querySelector('.Navbar');
         prevScrollPos = currentScrollPos;
     });
  
+
+
     /*===================================== Inicio ======================================================== */
 
     /* ------------------------------------ Efeito máquina de escrever ----------------------------------- */

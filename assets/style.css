@@ -280,6 +280,7 @@ to {
 {
    transform: translateY(-100%);
 }
+
 /* --------------------------------------- Inicio -----------------------*/
 #inicio img
 {
@@ -460,6 +461,12 @@ to {
     /*  */
     
 }
+
+.screen:hover > :not( :hover){
+    opacity: 0.5;
+    transition: all .5s;
+}
+
 .info
 {
     width: 100%;
@@ -1128,7 +1135,7 @@ to {
         border: 1px solid #E83864;
         border-radius: 5px;
     }
-    
+   
 
 }
 @media (max-width:500px){
@@ -1215,6 +1222,23 @@ to {
     .infoAbout p
     {
         font-size: .8em;
+    }
+
+}
+@media (max-width:300px){
+    /* ------- Skills ------------*/
+    .aboutMe{
+        margin-top: 5rem;
+        margin: .5rem;
+    }
+    .infoAbout{
+        height: auto;
+        min-width: 10rem;
+        padding: 2rem;
+    }
+    .infoAbout p
+    {
+        font-size: .6em;
     }
 
 }
