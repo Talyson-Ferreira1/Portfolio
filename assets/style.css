@@ -282,6 +282,20 @@ to {
 }
 
 /* --------------------------------------- Inicio -----------------------*/
+.Btn-upPage
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--primary);
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    cursor: pointer;
+    z-index: var(--alta);
+}
+
+
 #inicio img
 {
 
@@ -520,6 +534,7 @@ to {
 .BtnProjetos
 {
     width: 15rem;
+    min-height: 2rem;
     margin: 2rem;
 }
 
@@ -927,6 +942,12 @@ to {
     width: 12rem;
     padding: 1rem;
 }
+/* ---------------------------------------  CONTATO  -----------------------*/
+
+
+
+
+
 
 /* --------------------------------------- MediaQuery -----------------------*/
 
