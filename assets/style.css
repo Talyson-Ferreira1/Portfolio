@@ -197,7 +197,9 @@ to {
 {
     height: 100%;
     width: 100px;
-    transition: .3 all ease-in-out;
+
+    position: relative;
+
 
 }
 .Navbar ul li a
@@ -213,19 +215,46 @@ to {
     cursor: pointer;
     
 }
+.Navbar ul li::after
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: rotate(135deg);
+    content: "\f078";
+    font-family: fontAwesome;
+    transition  : .3s ease-in-out;
+    opacity: 0;
+}
+.Navbar ul li::before
+{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(-45deg);
+    content: "\f078";
+    font-family: fontAwesome;
+    transition: .3s ease-in-out;
+    opacity: 0;
+}
+.Navbar ul li:hover::before
+{
+    bottom: 5px;
+    right: 5px;
+    opacity: 1;
+}
+.Navbar ul li:hover::after
+{
+    top: 5px;
+    left: 5px;
+    opacity: 1;
+}
 
 .Navbar ul li:hover
 {
-    transform:scale(1.05);
     backdrop-filter: blur(30px);
 
 }
-.Navbar ul li a:hover
-{
-    color: var(--gray);
-
-}
-
 .btn
 {
     overflow: hidden;
@@ -293,9 +322,20 @@ to {
     bottom: 10%;
     cursor: pointer;
     z-index: var(--alta);
+    transform: scale(0);
+    transition: all .3s ;
 }
-
-
+.Btn-upPage::after
+{
+    content: "\f062";
+    font-family: fontAwesome;
+}
+#inicio
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 #inicio img
 {
 
@@ -371,9 +411,45 @@ to {
     font-size: 1.5em;
     color: var(--white);
 }
-
+.chevron    
+{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%) ;
+    transition: all .3s;
+    cursor: pointer;
+    animation: shake .3s alternate infinite ease-in-out;
+    
+}
+.chevron::before
+{
+    content: " \f078";
+    font-family: fontAwesome;
+    
+}
+@keyframes shake
+{
+    0%{
+       transform: translateY(-3px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(3px);
+    }
+}
 /* --------------------------------------- Projetos -----------------------*/
-
+#Projetos
+{
+    margin-top: 100vh;
+    background: var(--black);
+    border-top: 1px solid #db396172;
+    padding: 2rem;
+}
 .tabProjetos
 {
     width: 60vw;
@@ -410,8 +486,8 @@ to {
 {
     background: #fff;
     border-radius: 5px;
-    width: 250px;
-    height: 125px;
+    width: 220px;
+    height: 100px;
     cursor: pointer;
     position:relative;
     overflow: hidden;
@@ -429,7 +505,7 @@ to {
 }
 .thumbnail-3
 {
-    background-image: url(./img/thumbs/thumnail-vipcell.png);
+    background-image: url(./img/thumbs/thumbnail-shoes.png);
     background-size: cover;
 }
 .thumbnail-4
@@ -468,8 +544,8 @@ to {
     border-radius: 5px;
     left: 0;
     top: 100%;
-    width: 250px;
-    height: 125px;
+    width: 220px;
+    height: 100px;
     background: rgba(64, 64, 64, 0.789);
     transition: all .5s ease-in-out;
     /*  */
@@ -574,7 +650,7 @@ to {
     position: absolute;
     content: ' ';
     width: 14rem;
-    height:26.2rem;
+    height:24rem;
     background: transparent;
     z-index: var(--baixa);
     left: 50%;
@@ -614,7 +690,7 @@ to {
 }
 .visor-3
 {
-    background-image: url(./img/thumbs/visor-vipcell.png);
+    background-image: url(./img/thumbs/visor-Shoes.png);
 }
 .visor-4
 {
@@ -652,6 +728,7 @@ to {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background: var(--black);
 
 }
 .contain-skill
@@ -659,7 +736,7 @@ to {
     padding: 0 2rem;
     width: 100%;
     height: 100%;
-    background:var(--skill-color); 
+    background:#404040;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -873,6 +950,7 @@ to {
 {
     justify-content: space-evenly;
     align-items: center;
+    background: var(--black);
 
 }
 .imgBanner
@@ -943,7 +1021,12 @@ to {
     padding: 1rem;
 }
 /* ---------------------------------------  CONTATO  -----------------------*/
+#Contato
+{
+    background:#404040;
+    height: 50vh;
 
+}
 
 
 

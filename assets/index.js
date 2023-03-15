@@ -71,19 +71,36 @@ window.addEventListener('scroll', () =>{
 
 
 let btnScrollToTop = document.querySelector(".Btn-upPage");
-
+const btnScrollToSecundSection = document.querySelector(".chevron");
+const secundSection = document.querySelector("#Projetos");
 
 btnScrollToTop.addEventListener("click",()=>{
     window.scrollTo(0,0)
 })
 
-/*     function hideBtnScroll(){
-    if(window.scrollTo > 10){
-        console.log("ok")
-    }else console.log("not ok")
-}
-hideBtnScroll()
-*/
+btnScrollToSecundSection.addEventListener("click", ()=>{
+
+    const posicaoTop = secundSection.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({
+        top: posicaoTop,    
+        behavior: 'smooth'
+    });
+})
+
+window.addEventListener("scroll",()=>{
+    if(secundSection.getBoundingClientRect().top <= 0){
+        //ativar
+        btnScrollToTop.style.transform = "scale(1)"
+    }else{
+        //desativar
+        btnScrollToTop.style.transform = "scale(0)"
+    }
+})
+
+
+
+
 /* ------------------------------------ Efeito máquina de escrever ----------------------------------- */
 
 const textDisplay = document.querySelector('.Profession');
