@@ -1013,6 +1013,7 @@ to {
 .infoAbout p
 {
     font-size: 1em;
+    letter-spacing: .1em;
 }
 .btnAbout
 {
