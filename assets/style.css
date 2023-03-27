@@ -496,7 +496,7 @@ to {
 }
 .thumbnail-1
 {
-    background-image: url(./img/thumbs/thumbnail-Calculadora.png);
+    background-image: url(./img/thumbs/thumnail-Climath.png);
     background-size: cover;
 }
 .thumbnail-2
@@ -683,7 +683,7 @@ to {
 }
 .visor-1
 {
-    background-image: url(./img/thumbs/visor-calc.png);
+    background-image: url(./img/thumbs/visor-Climath.png);
 }
 .visor-2
 {
@@ -1111,6 +1111,11 @@ to {
     {
         font-size: .8em;
         height: auto;
+    }
+    /* ------- Contact ------------*/
+    .projetosFooter
+    {
+        width: 15rem;
     }
 }
 @media (max-width:800px){
