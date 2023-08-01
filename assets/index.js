@@ -191,7 +191,7 @@ function showscreen(i){
 /* ------------------------------------ Efeito aviso skill ----------------------------------- */
 
 
-const boxSkill = document.querySelector(".contain-skill");
+/* const boxSkill = document.querySelector(".contain-skill");
 
 boxSkill.addEventListener('mouseenter',()=>{
     const textSkill = document.querySelector(".contain-skill span");
@@ -200,7 +200,7 @@ boxSkill.addEventListener('mouseenter',()=>{
     setTimeout(()=>{textSkill.style.display="none"},10000);
 
 })
-
+ */
 /* ------------------------------------ Popup Skills ----------------------------------- */
 
 const infoSkill = document.querySelectorAll(".skill");
