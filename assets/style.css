@@ -516,7 +516,7 @@ to {
 }
 .thumbnail-5
 {
-    background-image: url(./img/thumbs/thumnail-login2.png);
+     background-image: url(./img/thumbs/thumnail-cardapio.png);
     background-size: cover;
 }
 .thumbnail-6
@@ -699,7 +699,7 @@ to {
 }
 .visor-5
 {
-    background-image: url(./img/thumbs/visor-login2.png);
+    background-image: url(./img/thumbs/visor-cardapio.png);
 }
 .visor-6
 {
@@ -1032,6 +1032,7 @@ to {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
+    padding-bottom: 4rem;
 
 }
 .projetosFooter
@@ -1163,7 +1164,11 @@ form button:hover {
     position: absolute;
     bottom: 5px;
     left: 50%;
-    transform:translateX(-50%)
+    transform:translateX(-50%);
+     width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
